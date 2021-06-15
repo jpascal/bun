@@ -785,7 +785,7 @@ func (t *Table) Dialect() Dialect { return t.dialect }
 func (t *Table) HasBeforeScanHook() bool   { return t.flags.Has(beforeScanHookFlag) }
 func (t *Table) HasAfterScanHook() bool    { return t.flags.Has(afterScanHookFlag) }
 func (t *Table) HasAfterSelectHook() bool  { return t.flags.Has(afterSelectHookFlag) }
-func (t *Table) HasBeforeInsertHook() bool { return t.flags.Has(afterInsertHookFlag) }
+func (t *Table) HasBeforeInsertHook() bool { return t.flags.Has(beforeInsertHookFlag) }
 func (t *Table) HasAfterInsertHook() bool  { return t.flags.Has(afterInsertHookFlag) }
 func (t *Table) HasBeforeUpdateHook() bool { return t.flags.Has(beforeUpdateHookFlag) }
 func (t *Table) HasAfterUpdateHook() bool  { return t.flags.Has(afterUpdateHookFlag) }
